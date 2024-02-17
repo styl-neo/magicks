@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  steamcmd:
+    image: steamcmd/steamcmd:latest
+    container_name: steamcmd
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /mnt/storage/docker_volume/steamcmd:/data
+    ports:
+    restart: unless-stopped
