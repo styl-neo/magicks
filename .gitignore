@@ -1,1 +1,9 @@
-__pycache__
+*
+!*/
+
+!.gitignore
+!crypto_ratio/
+!cycle_mega.sh
+!docker_stuff/
+!matrix/
+!send_notification.sh
