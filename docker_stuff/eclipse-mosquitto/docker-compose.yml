@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+  eclipse-mosquitto:
+    container_name: mosquitto
+    environment:
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - /mnt/storage/docker_volumes/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - /mnt/storage/docker_volumes/mosquitto/data:/mosquitto/data
+      - /mnt/storage/docker_volumes/mosquitto/log:/mosquitto/log
+    image: eclipse-mosquitto
+    restart: unless-stopped

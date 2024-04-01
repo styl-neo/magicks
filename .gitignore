@@ -1,9 +1,2 @@
-*
-!*/
-
-!.gitignore
-!crypto_ratio/
-!cycle_mega.sh
-!docker_stuff/
-!matrix/
-!bash_stuff/
+scratch/
+**/__pycache__/
